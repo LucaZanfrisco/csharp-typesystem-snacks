@@ -129,4 +129,23 @@ for(int i = 0; i < arrayDispari.Length; i++)
 
 Console.WriteLine("\n------------------------\n");
 
+// Snack 8
+//  Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+int[] arrayInteri = { 20, 50, 21, 45, 12, 3, 4, 12, 4, 5, 12 };
+int sommaArrayInteri = 0;
+
+for (int i = 0; i < arrayInteri.Length; i++)
+{
+
+    if(i % 2 != 0)
+    {
+        sommaArrayInteri += arrayInteri[i];
+    }
+    
+}
+
+Console.WriteLine($"La sommma dei numeri in posizione dispari è: {sommaArrayInteri}");
+
+Console.WriteLine("\n------------------------\n");
 
