@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
+/*
 // Snack 1
 // L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
@@ -137,15 +137,35 @@ int sommaArrayInteri = 0;
 
 for (int i = 0; i < arrayInteri.Length; i++)
 {
-
     if(i % 2 != 0)
     {
         sommaArrayInteri += arrayInteri[i];
     }
-    
 }
 
 Console.WriteLine($"La sommma dei numeri in posizione dispari è: {sommaArrayInteri}");
 
 Console.WriteLine("\n------------------------\n");
+*/
+// Snack 9
+// Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
+int[] arrayDaRiempire = new int[50];
+
+int sommaArrayRiempire = 0;
+Console.WriteLine("Inserire un numero minore o uguale a 50");
+
+int k = 0;
+while(sommaArrayRiempire < 50)
+{
+    Console.Write("Inserire un numero: ");
+    int numeroDaInserire = int.Parse(Console.ReadLine());
+    sommaArrayRiempire += numeroDaInserire;
+    arrayDaRiempire[k] = numeroDaInserire;
+    k++;
+}
+
+for(int i = 0; i < arrayDaRiempire.Length; i++)
+{
+    Console.Write($"{arrayDaRiempire[i]} - ");
+}
