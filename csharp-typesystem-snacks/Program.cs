@@ -3,6 +3,8 @@
 // Snack 1
 // L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
+using System;
+
 Console.Write("Inserire il primo numero: ");
 float primoNumero = float.Parse(Console.ReadLine());
 
@@ -42,13 +44,13 @@ Console.WriteLine("\n------------------------\n");
 // Snack 3
 // Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-int i = 1;
+int j = 1;
 float somma = 0;
-while(i <= 10)
+while(j <= 10)
 {
-    Console.Write($"Inserire il numero {i} :");
+    Console.Write($"Inserire il numero {j} :");
     somma += float.Parse(Console.ReadLine());
-    i++;
+    j++;
 }
 
 Console.WriteLine($"La somma di tutti i numeri inseriti è: {somma}");
@@ -103,5 +105,28 @@ bool risultatoRandom = random.Next(2) == 1;
 
 Console.WriteLine($"{(risultatoRandom ? $"{nomeUtente} puoi partecipare alla festa" : $"{nomeUtente} non puoi partecipare alla festa")}");
 
+Console.WriteLine("\n------------------------\n");
+
+// Snack 7
+// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+int[] arrayDispari = new int[6];
+
+for(int i = 0; i < arrayDispari.Length; i++)
+{
+    Console.Write($"Inserire il {i} numero: ");
+    int numeroInserito = int.Parse(Console.ReadLine());
+    if(numeroInserito % 2 != 0)
+    {
+        arrayDispari[i] = numeroInserito;
+    }
+}
+
+for(int i = 0; i < arrayDispari.Length; i++)
+{
+    Console.Write($"{i} - ");
+}
+
+Console.WriteLine("\n------------------------\n");
 
 
