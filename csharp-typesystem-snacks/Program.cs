@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-/*
+
 // Snack 1
 // L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
@@ -146,7 +146,7 @@ for (int i = 0; i < arrayInteri.Length; i++)
 Console.WriteLine($"La sommma dei numeri in posizione dispari è: {sommaArrayInteri}");
 
 Console.WriteLine("\n------------------------\n");
-*/
+
 // Snack 9
 // Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
@@ -168,4 +168,28 @@ while(sommaArrayRiempire < 50)
 for(int i = 0; i < arrayDaRiempire.Length; i++)
 {
     Console.Write($"{arrayDaRiempire[i]} - ");
+}
+
+Console.WriteLine("\n------------------------\n");
+
+// Snack 10
+//  Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
+
+Console.WriteLine("Inserire quante liste generare: ");
+int n = int.Parse(Console.ReadLine());
+
+Console.WriteLine("\n--------\n");
+
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine($"Lista {i + 1}:");
+    int[] arrayRandom = new int[10]; 
+    for(int l = 0; l < arrayRandom.Length; j++)
+    {
+        Random rand = new Random();
+        int numeroRandom = rand.Next(0,101);
+        arrayRandom[l] = numeroRandom;
+        Console.WriteLine(arrayRandom[l]);
+    }
+    Console.WriteLine();
 }
