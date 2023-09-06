@@ -72,3 +72,20 @@ Console.WriteLine($"La sommad dei numeri da 2 a 10 è: {sommaSnack4}");
 Console.WriteLine($"La media dei numeri da 2 a 10 è: {mediaSnack4}");
 
 Console.WriteLine("\n------------------------\n");
+
+// Snack 5
+//  Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.Write("Inserire un numero: ");
+int numeroUtente = int.Parse(Console.ReadLine());
+
+if(numeroUtente % 2 == 0)
+{
+    Console.WriteLine($"Numero: {numeroUtente}");
+}
+else
+{
+    Console.WriteLine($"Numero: {numeroUtente + 1}");
+}
+
+Console.WriteLine("\n------------------------\n");
