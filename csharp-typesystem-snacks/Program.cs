@@ -89,3 +89,19 @@ else
 }
 
 Console.WriteLine("\n------------------------\n");
+
+// Snack 6
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] invitatiFesta = { "Antonio", "Giovanni", "Gianni", "Matteo", "Piero", "Astrubale", "Gino" };
+
+Console.Write("Inserire il proprio nome: ");
+string nomeUtente = Console.ReadLine();
+
+Random random = new Random();
+bool risultatoRandom = random.Next(2) == 1;
+
+Console.WriteLine($"{(risultatoRandom ? $"{nomeUtente} puoi partecipare alla festa" : $"{nomeUtente} non puoi partecipare alla festa")}");
+
+
+
