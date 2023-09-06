@@ -54,3 +54,21 @@ while(i <= 10)
 Console.WriteLine($"La somma di tutti i numeri inseriti è: {somma}");
 
 Console.WriteLine("\n------------------------\n");
+
+// Snack 4
+// Calcola la somma e la media dei numeri da 2 a 10.
+
+int sommaSnack4 = 0;
+int mediaSnack4 = 0;
+
+for(int i = 2; i <= 10; i++)
+{
+    sommaSnack4 += i;
+}
+
+mediaSnack4 = sommaSnack4 / 9;
+
+Console.WriteLine($"La sommad dei numeri da 2 a 10 è: {sommaSnack4}");
+Console.WriteLine($"La media dei numeri da 2 a 10 è: {mediaSnack4}");
+
+Console.WriteLine("\n------------------------\n");
